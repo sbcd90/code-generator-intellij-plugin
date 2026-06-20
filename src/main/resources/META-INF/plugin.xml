@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>com.codegen</id>
+    <name>Codegen Ollama Plugin</name>
+    <vendor>sbcd90</vendor>
+
+    <description>Simple Codegen Ollama Plugin</description>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <action id="GenerateCode"
+                class="com.codegen.CursorAction"
+                text="Generate Code"
+                description="Generate Code From Qwen-3 Model">
+            <keyboard-shortcut
+                keymap="$default"
+                first-keystroke="TAB"/>
+        </action>
+    </actions>
+</idea-plugin>
