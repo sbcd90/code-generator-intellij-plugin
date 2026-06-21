@@ -30,7 +30,8 @@ class CursorAction : AnAction() {
         val text = doc.text
 
         Thread {
-            var generated = OllamaClient.complete(text)
+            val client = Config.client()
+            var generated = client.complete(text)
             generated = clean(generated)
 
             WriteCommandAction.runWriteCommandAction(project) {

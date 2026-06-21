@@ -6,6 +6,9 @@
     <description>Simple Codegen Ollama Plugin</description>
 
     <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="com.codegen.settings.AppSettings"/>
+        <applicationConfigurable id="codegen.settings" displayName="Codegen" parentId="tools"
+                                 instance="com.codegen.settings.CodegenConfigurable"/>
     </extensions>
 
     <actions>

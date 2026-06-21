@@ -7,6 +7,7 @@ object OllamaClient {
     private val client = OkHttpClient()
 
     fun complete(code: String): String {
+        println("Hit Ollama Client")
         val prompt = """
 You are an IDE autocomplete engine.
 
@@ -27,7 +28,6 @@ Context:
 
 $code <CURSOR>
 """
-        print(prompt)
         val body = JSONObject()
             .put("model", "qwen2.5-coder:1.5b")
             .put("stream", false)
