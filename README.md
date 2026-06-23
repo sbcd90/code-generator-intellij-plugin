@@ -33,9 +33,9 @@ ollama pull qwen2.5-coder:1.5b
 ## Configure Settings
 
 - Visit `Intellij Idea` -> `Settings` -> `Tools` -> `Codegen`. The page should look like this.
-[img](images/ollama.png)
+[!img](images/ollama.png)
 
-- Change to Groq like [this](images/groq.png)
+- Change to Groq like [!this](images/groq.png)
 
 ## Use it
 
@@ -43,4 +43,4 @@ ollama pull qwen2.5-coder:1.5b
 
 ## Design
 
-[Architecture](images/architecture.png)
+[!Architecture](images/architecture.png)
